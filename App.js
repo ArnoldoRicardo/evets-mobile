@@ -7,7 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import HomeStackScreen from "./src/components/Calendario";
+import HomeStackScreen from "./src/components/Eventos";
 import SettingsStackScreen from "./src/components/Talleres";
 
 const Tab = createBottomTabNavigator();
@@ -18,7 +18,7 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
-            if (route.name === "Calendario") {
+            if (route.name === "Eventos") {
               return (
                 <MaterialIcons
                   name="event-available"
@@ -54,7 +54,7 @@ export default function App() {
           inactiveTintColor: "gray",
         }}
       >
-        <Tab.Screen name="Calendario" component={HomeStackScreen} />
+        <Tab.Screen name="Eventos" component={HomeStackScreen} />
         <Tab.Screen name="Talleres" component={SettingsStackScreen} />
         <Tab.Screen name="Expociciones" component={SettingsStackScreen} />
         <Tab.Screen name="Resintos" component={SettingsStackScreen} />
