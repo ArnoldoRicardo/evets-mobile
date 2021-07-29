@@ -1,6 +1,6 @@
-import { createStackNavigator } from "@react-navigation/stack";
-import { Button, Text, View } from "react-native";
 import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { Button, Text, View, FlatList, Image } from "react-native";
 
 function DetailsScreen() {
   return (
